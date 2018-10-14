@@ -1,0 +1,34 @@
+.exercise-table {
+  margin: 10px auto;
+  width: 90%;
+  border: 2px solid #e3f1ff;
+  // border-collapse: collapse;
+
+  thead {
+    background: #89bff8;
+    border: 2px solid #89bff8;
+
+    th {
+      padding: 10px;
+    }
+  }
+
+  tbody {
+    tr {
+      background: #e3f1ff;
+
+      td {
+        padding: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    tr:nth-child(2n+1) {
+      background: white;
+    }
+
+  }
+}

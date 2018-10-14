@@ -8,6 +8,9 @@
 # dependencies
 /node_modules
 
+# non-prog data
+/_material
+
 # IDEs and editors
 /.idea
 .project

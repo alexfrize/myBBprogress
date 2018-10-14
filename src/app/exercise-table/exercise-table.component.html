@@ -1,0 +1,12 @@
+<table *ngIf="exercises" class="exercise-table">
+  <thead>
+    <th>Exercise</th>
+    <th *ngFor="let set of exercises[0].sets; let i=index">Set {{i+1}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let exercise of exercises; let exerciseIndex=index">
+      <td>{{exercise.type}}</td>
+      <td (click)="openDialog(exerciseIndex, setIndex)" *ngFor="let set of exercise.sets; let setIndex=index">{{set.weight}}x{{set.repeats}}</td>
+    </tr>
+  </tbody>
+</table>
