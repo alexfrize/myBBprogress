@@ -1,12 +1,14 @@
+@import '../../assets/scss/colors.scss';
+
 .exercise-table {
   margin: 10px auto;
   width: 90%;
-  border: 2px solid #e3f1ff;
+  border: 2px solid $lightBlueColor;
   // border-collapse: collapse;
 
   thead {
-    background: #89bff8;
-    border: 2px solid #89bff8;
+    background: $darkBlueColor;
+    border: 2px solid $darkBlueColor;
 
     th {
       padding: 10px;
@@ -15,7 +17,7 @@
 
   tbody {
     tr {
-      background: #e3f1ff;
+      background: $lightBlueColor;
 
       td {
         padding: 10px;

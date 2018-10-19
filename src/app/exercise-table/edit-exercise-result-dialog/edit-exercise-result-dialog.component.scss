@@ -1,0 +1,54 @@
+@import '../../../assets/scss/colors.scss';
+
+.dialog-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .close-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: black;
+    outline: 0;
+    position: relative;
+    top: -10px;
+
+    &:hover {
+      cursor: pointer;
+      color: lighten(black, 20%);
+    }
+  }
+}
+
+.edit-results-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .inc-dec-button {
+    border: 1px solid $lightBlueColor;
+    width: 50px;
+
+    background: $darkBlueColor;
+    color: black;
+    font-size: 36px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .divider {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .result-digit {
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
