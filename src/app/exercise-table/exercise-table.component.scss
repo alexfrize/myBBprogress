@@ -1,4 +1,5 @@
 @import '../../assets/scss/colors.scss';
+@import '../../assets/scss/breakpoints.scss';
 
 .exercise-table {
   margin: 10px auto;
@@ -11,7 +12,13 @@
     border: 2px solid $darkBlueColor;
 
     th {
-      padding: 10px;
+      padding: 5px;
+      font-size: 14px;
+
+      @include breakpoint($sm) {
+        padding: 10px;
+        font-size: 20px;
+      }
     }
   }
 
@@ -20,10 +27,20 @@
       background: $lightBlueColor;
 
       td {
-        padding: 10px;
+        padding: 5px;
+        font-size: 14px;
+
+        @include breakpoint($sm) {
+          padding: 10px;
+          font-size: 20px;
+        }
 
         &:hover {
           cursor: pointer;
+        }
+
+        &.set {
+          text-align: center;
         }
       }
     }
@@ -31,6 +48,5 @@
     tr:nth-child(2n+1) {
       background: white;
     }
-
   }
 }

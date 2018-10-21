@@ -6,7 +6,7 @@
   <tbody>
     <tr *ngFor="let exercise of exercises; let exerciseIndex=index">
       <td>{{exercise.type}}</td>
-      <td (click)="openDialog(exerciseIndex, setIndex)" *ngFor="let set of exercise.sets; let setIndex=index">{{set.weight}}x{{set.repeats}}</td>
+      <td class="set" (click)="openDialog(exerciseIndex, setIndex)" *ngFor="let set of exercise.sets; let setIndex=index">{{set.weight}}x{{set.repeats}}</td>
     </tr>
   </tbody>
 </table>

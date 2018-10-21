@@ -6,7 +6,7 @@ import { EditExerciseResultDialogComponent } from './edit-exercise-result-dialog
 @Component({
   selector: 'mybb-exercise-table',
   templateUrl: './exercise-table.component.html',
-  styleUrls: ['./exercise-table.component.scss']
+  styleUrls: ['./exercise-table.component.scss'],
 })
 export class ExerciseTableComponent implements OnInit {
 
@@ -20,7 +20,6 @@ export class ExerciseTableComponent implements OnInit {
     console.log(this.exercises);
   }
 
-
   openDialog(exerciseIndex, setIndex) {
     console.log(exerciseIndex, setIndex);
     this.dialog.open(EditExerciseResultDialogComponent, {
@@ -32,6 +31,4 @@ export class ExerciseTableComponent implements OnInit {
       }
     });
   }
-
-
 }

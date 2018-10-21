@@ -1,11 +1,19 @@
+@import '../../assets/scss/breakpoints.scss';
+
 .top-menu {
   display: flex;
   align-items: center;
   width: 100vw;
   height: 30px;
   padding: 10px;
+  box-sizing: border-box;
 
   .logo {
     width: 200px;
+    margin: 15px auto;
+
+    @include breakpoint($sm) {
+      margin: 10px;
+    }
   }
 }

@@ -4,7 +4,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 @Component({
   selector: 'mybb-edit-exercise-result-dialog',
   templateUrl: './edit-exercise-result-dialog.component.html',
-  styleUrls: ['./edit-exercise-result-dialog.component.scss']
+  styleUrls: ['./edit-exercise-result-dialog.component.scss'],
 })
 export class EditExerciseResultDialogComponent implements OnInit {
 

@@ -1,21 +1,49 @@
 <section class="dialog-header">
-  <h2 mat-dialog-title>{{data.exerciseType}} - Set {{data.setIndex}}</h2>
+  <h2 mat-dialog-title>{{data.exerciseType}} - Set {{data.setIndex + 1}}</h2>
   <button mat-dialog-close class="close-button">
     <i class="material-icons">close</i>
   </button>
 </section>
 <mat-dialog-content>
-  <section class="edit-results-container">
 
-    <button class="inc-dec-button" (click)="decreaseWeight()">-</button>
-    <p class="result-digit">{{data.weight}} lbs</p>
-    <button class="inc-dec-button" (click)="increaseWeight()">+</button>
+  <table class="edit-results-table">
+    <tbody>
 
-    <i class="material-icons divider">close</i>
+      <tr>
+        <td> <button class="inc-dec-button" (click)="decreaseWeight()">-</button> </td>
+        <td>
+          <p class="result-digit">{{data.weight}}</p>
+        </td>
+        <td> <button class="inc-dec-button" (click)="increaseWeight()">+</button> </td>
 
-    <button class="inc-dec-button" (click)="decreaseRepeats()">-</button>
-    <p class="result-digit">{{data.repeats}}</p>
-    <button class="inc-dec-button" (click)="increaseRepeats()">+</button>
+        <td> <i class="material-icons divider">close</i> </td>
 
-  </section>
+        <td> <button class="inc-dec-button" (click)="decreaseRepeats()">-</button>
+        </td>
+        <td>
+          <p class="result-digit">{{data.repeats}}</p>
+        </td>
+        <td> <button class="inc-dec-button" (click)="increaseRepeats()">+</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="3">
+          <p class="result-measure">lbs</p>
+        </td>
+        <td> </td>
+        <td colspan="3">
+          <p class="result-reps">repetitions</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="7">
+          <button mat-button mat-flat-button class="confirm-button">Confirm</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
 </mat-dialog-content>
